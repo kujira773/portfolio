@@ -29,25 +29,26 @@ dl {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+    /* width: 100%; */
 }
 
-.form-item dt {
+/* .form-item */ dt { 
     width: 200px;
 }
 
-.form-item dd {
+/* .form-item */ dd { 
     width: 300px;
 }
 
 /* 入力フォーム */
-input[type="text"], input[type="email"], select[name="ageGroup"], textarea[name="message"] {
+input[type="text"], input[type="email"], select, textarea {
     display: block;
     width: 100%;
     font-size: 16px;
     /* 枠の設定 */
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc;
     background: #fff;
-    padding: 0.3em;
+    padding: 0.3em; */
 }
 
 /* セレクトボックス */
@@ -115,17 +116,19 @@ input[type="submit"] {
         padding: 20px 0;
     }
     dl {
-        width: 300px;
+        /* width: 300px; */
+        width: 90%;
     }
     .form-item {
         display: block;
     }
-    .form-item dt {
-        width: 90%;
+    dt {
+        width: 100%;
         margin-bottom: 10px;
     }
-    .form-item dd {
-        width: 90%;
+    dd {
+        width: 100%;
+        margin-inline-start: 0px;
     }
     input[type="submit"] {
         padding: 1em;
