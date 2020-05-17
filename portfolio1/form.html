@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devicce-width, initual-scale=1"> <!--レスポンシブ対応にする-->
+    <meta name="format-detection" content="telephone=no"> <!--電話番号のリンクを無効にする-->
+    <title>コンタクトフォーム</title>
+    <meta name="description" content="コンタクトフォーム">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/form-style.css">
+</head>
+
+<body>
+    <h1>見学予約</h1>
+    <form action="program.php" method="post">
+        <dl>
+            <div class="form-item">
+                <dt><span class="must">必須</span>お名前</dt>
+                <dd><input type="text" name="userName"></dd>
+            </div>
+            <div class="form-item">
+                <dt><span class="must">必須</span>メールアドレス</dt>
+                <dd><input type="email" name="userEmail"></dd>
+            </div>
+            <div class="form-item">
+                <dt><span class="must">必須</span>年齢</dt>
+                <dd>
+                    <select name="ageGroup">
+                        <option value="選択してください" selected>選択してください</option>
+                        <option value="17歳未満">17歳未満</option>
+                        <option value="18〜24歳">18〜24歳</option>
+                        <option value="25〜29歳">25〜29歳</option>
+                        <option value="30〜34歳">30〜34歳</option>
+                        <option value="30〜34歳">30〜34歳</option>
+                        <option value="40歳以上">40歳以上</option>
+                    </select>
+                </dd>
+            </div>
+            <div class="form-item">
+                <dt><span class="must">必須</span>ご希望のプラン</dt>
+                <dd>
+                    <label class="label-radio"><input type="radio" name="plan" value="ひとり部屋プラン">ひとり部屋プラン</label><br>
+                    <label class="label-radio"><input type="radio" name="plan" value="フレンズプラン">フレンズプラン</label><br>
+                    <label class="label-radio"><input type="radio" name="plan" value="テラスハウスプラン">テラスハウスプラン</label>
+                </dd>
+            </div>
+            <div class="form-item">
+                <dt><span class="free">任意</span>備考欄</dt>
+                <dd><textarea name="message"></textarea></dd>
+            </div>
+            <div class="privacy-policy">
+                <p><a href="#">個人情報の取り扱い</a>について</p>
+                <p><input type="checkbox" name="privacy">個人情報の取り扱いに同意する</p>
+            </div>
+        </dl>
+        <div class="form-submit">
+            <input type="submit" value="送信する">
+        </div>
+    </form>
+
+    <footer>
+        <small class="foot-area_copy">&copy; Kuroneko Corporation.</small>
+    </footer>
+</body>
+
+</html>

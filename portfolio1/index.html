@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devicce-width, initual-scale=1">
+    <!--レスポンシブ対応にする-->
+    <meta name="format-detection" content="telephone=no">
+    <!--電話番号のリンクを無効にする-->
+    <title>ページのタイトル</title>
+    <meta name="description" content="ページの内容を説明する文章">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-logo-menu">
+            <div class="logo-area">
+                <img src="img/site-logo-w.png" alt="ロゴ">
+            </div>
+            <nav class="sp-only">
+                <div class="gnav-toggle">
+                    <input id="gnav-input" type="checkbox" class="gnav-hidden">
+                    <label id="gnav-open" for="gnav-input"><span></span></label>
+                    <label class="gnav-unshown" id="gnav-close" for="gnav-input"></label>
+                    <div id="gnav-content">
+                        <ul class="gnav-menu">
+                            <li class="gnav-item">
+                                <a href="#service">Service<br>サービス</a>
+                            </li>
+                            <li class="gnav-item">
+                                <a href="#plan">Plan<br>プラン</a>
+                            </li>
+                            <li class="gnav-item">
+                                <a href="#access">Access<br>アクセス</a>
+                            </li>
+                            <li class="gnav-item">
+                                <a href="form.html">Contact<br>コンタクト</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <nav class="pc-only">
+                <ul class="gnav-menu">
+                    <li class="gnav-item">
+                        <a href="#service">Service<br>サービス</a>
+                    </li>
+                    <li class="gnav-item">
+                        <a href="#plan">Plan<br>プラン</a>
+                    </li>
+                    <li class="gnav-item">
+                        <a href="#access">Access<br>アクセス</a>
+                    </li>
+                    <li class="gnav-item">
+                        <a href="form.html">Contact<br>コンタクト</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="mv" class="mv-area">
+            <h1 class="mv-title">テラスなシェアハウス生活<br class="sp-only">はじまる。</h1>
+            <button type="mv-title" onclick="location.href='form.html'" class="btn btn-reserve">お申し込みはこちら</button>
+        </section>
+
+        <!-- できたらユーザーの声を追加する -->
+        <section id="users" class="user-area">
+            <div class="users-inner">
+                <h3 class="h3-title">入居者様の声続々！</h3>
+                <ul class="user-content">
+                    <li class="user-content-inner">
+                        <img src="img/user01.jpg" alt="ユーザー">
+                        <h4>Aさん</h4>
+                        <p>ペット可なのが即決ポイントでした！<br>※種類等による</p>
+                    </li>
+                    <li class="user-content-inner">
+                        <img src="img/user02.jpg" alt="ユーザー">
+                        <h4>Bさん</h4>
+                        <p>お酒を飲む仲間ができて楽しいです</p>
+                    </li>
+                    <li class="user-content-inner">
+                        <img src="img/user03.jpg" alt="ユーザー">
+                        <h4>Cさん</h4>
+                        <p>外国人も多く、国際色豊かデス</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- ここまで -->
+
+        <section id="info" class="info-area">
+            <div class="inner info-content">
+                <div class="info-txt">
+                    <h2>紹介文の<br class="sp-only">タイトル</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                        quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                        rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                        Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+                        tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+                        dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+                        Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+                        ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus,
+                        sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel,
+                        luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
+                        sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus
+                        tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed
+                        consequat, leo eget bibendum sodales, augue velit cursus nunc,
+                        <br>改行</p>
+                </div>
+                <img src="img/img-info.jpg" alt="紹介文の写真">
+            </div>
+        </section>
+
+        <section id="service" class="service-area">
+            <div class="inner">
+                <h2 class="h2-title">Service</h2>
+                <h3>サービス</h3>
+                <p class="txt-center">入居したその日から<br class="sp-only">便利なアフターサービスをご利用いただけます</p>
+            </div>
+            <ul class="service-content">
+                <li class="service-item">
+                    <img src="img/service-icon_01.svg" alt="Free Wi-Fi">
+                    <h4>無料のWi-Fiを完備</h4>
+                </li>
+                <li class="service-item">
+                    <img src="img/service-icon_02.svg" alt="Rental Cycle">
+                    <h4>便利な自転車レンタル</h4>
+                </li>
+                <li class="service-item">
+                    <img src="img/service-icon_03.svg" alt="Catering">
+                    <h4>ドリンクサービス</h4>
+                </li>
+                <li class="service-item">
+                    <img src="img/service-icon_04.svg" alt="Cosutomer Service">
+                    <h4>安心の電話サポート充実</h4>
+                </li>
+            </ul>
+        </section>
+
+        <section id="plan" class="plan-area">
+            <div class="inner">
+                <h2 class="h2-title">Plan</h2>
+                <h3>ご利用プラン</h3>
+                <p class="txt-center">ライフスタイル・人数に合わせて、<br class="sp-only">お好みの間取りをお選びいただけます</p>
+                <ul class="plan-content">
+                    <li class="plan-item">
+                        <img src="img/img-plan_01.jpg" alt="プラン１">
+                        <div class="plan-info">
+                            <h4 class="plan-title">ひとり部屋プラン</h4>
+                            <p>プライベートな時間も大切にしたい方向け</p>
+                            <ul class="plan-list">
+                                <li>1人用</li>
+                                <li>1DK</li>
+                            </ul>
+                            <p class="plan-price">75,000円(月額)</p>
+                        </div>
+                    </li>
+                    <li class="plan-item">
+                        <img src="img/img-plan_02.jpg" alt="プラン2">
+                        <div class="plan-info">
+                            <h4 class="plan-title">フレンズプラン</h4>
+                            <p>気の知れた友達とお得にシェア生活</p>
+                            <ul class="plan-list">
+                                <li>2人用</li>
+                                <li>2LDK</li>
+                            </ul>
+                            <p class="plan-price">80,000円(月額)</p>
+                        </div>
+                    </li>
+                    <li class="plan-item">
+                        <img src="img/img-plan_03.jpg" alt="プラン3">
+                        <div class="plan-info">
+                            <h4 class="plan-title">テラスハウスプラン</h4>
+                            <p>大人数で賑やかに暮らしたいならおすすめ</p>
+                            <ul class="plan-list">
+                                <li>3〜4人</li>
+                                <li>3LDK</li>
+                            </ul>
+                            <p class="plan-price">90,000円(月額)</p>
+                        </div>
+                    </li>
+                </ul>
+                <button type="button" onclick="location.href='#'" class="btn btn-reserve">お申し込みはこちら</button>
+            </div>
+        </section>
+
+        <section id="access" class="access-area">
+            <div class="inner">
+                <h2 class="hs-title">Access</h2>
+                <h3>アクセス</h3>
+                <div class="access-content">
+                    <div>
+                        <p class="txt-lead">電車でお越しの場合<br><br>
+                            渋谷駅徒歩15分</p>
+                    </div>
+                    <img src="img/img-access.jpg" alt="アクセス写真">
+                </div>
+            </div>
+            <div class="access-maparea">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7701641546632!2d139.69944175038086!3d35.65803388010251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563b00109f%3A0x337328def1e2ab26!2z5riL6LC36aeF!5e0!3m2!1sja!2sjp!4v1588558099518!5m2!1sja!2sjp"
+                    width="800" height="400" frameborder="0" style="border:0;" allowfullscreen=""
+                    class="access-map"></iframe>
+            </div>
+        </section>
+
+        <div class="pagetop">
+            <a href="#mv">ページトップ</a>
+        </div>
+    </main>
+    <footer class="foot-area">
+        <div class="inner">
+            <div class="logo-area foot-logo">
+                <img src="img/site-logo-w.png" alt="フッターロゴ">
+            </div>
+            <p class="txt-center">ご入居・プランついて、<br class="sp-only">お気軽にお問い合わせください</p>
+            <address class="text-phone">
+                TEL:<a href="tel:00-1234-5678">00-1234-5678</a>
+            </address>
+        </div>
+        <small class="foot-area_copy">&copy; Kuroneko Corporation.</small>
+    </footer>
+</body>
+
+</html>
