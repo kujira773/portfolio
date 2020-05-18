@@ -6,49 +6,53 @@
     <title>カフェ</title>
     <meta name="keywords" content="カフェ,コーヒー,東京都">
     <meta name="description" content="カフェのホームページです">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>
+    <header class="header">
+        <h1 class="logo">
             <img src="img/logo.svg" alt="ロゴ">
         </h1>
     </header>
-    <main>
-        <figure>
+    <main class="main">
+        <figure class="top">
             <img src="img/top.jpg" alt="トップ画">
         </figure>
-        <nav>
-            <ul>
+        <nav class="nav">
+            <ul class="nav-list">
                 <li><a href="#about">about</a></li>
                 <li><a href="#menu">menu</a></li>
-                <li><a href="#photo">photo</a></li>
+                <li><a href="#photos">photos</a></li>
                 <li><a href="#access">access</a></li>
             </ul>
         </nav>
-        <section id="about">
-            <h2>
+
+        <section class="section about" id="about">
+            <h2 class="heading">
                 <img src="img/ttl_about.svg" alt="about">
             </h2>
             <p>コーヒーとタイムレスなひと時をお過ごしください</p>
         </section>
 
-        <section id="menu">
-            <h2>
+        <section class="section menu" id="menu">
+            <h2 class="heading">
                 <img src="img/ttl_menu.svg" alt="menu">
             </h2>
-            <ul>
+            <ul class="menu-list">
                 <li>ブレンドコーヒー</li>
                 <li>エスプレッソ</li>
                 <li>カフェラテ</li>
             </ul>
         </section>
 
-        <section id="photo">
-            <h2>
+        <section class="section photos" id="photos">
+            <h2 class="heading">
                 <img src="img/ttl_photos.svg" alt="photos">
             </h2>
-            <ul>
+            <ul class="photos-list">
                 <li>
                     <figure>
                         <img src="img/photos_01.jpg" alt="フォト1">
@@ -70,33 +74,35 @@
             </ul>
         </section>
 
-        <section id="access">
-            <h2>
+        <section class="section access" id="access">
+            <h2 class="heading">
                 <img src="img/ttl_access.svg" alt="photos">
             </h2>
-            <address>
-                <strong>カフェ</strong><br>
-                〒123-4567<br>
-                東京都XX区XXX町1-2-3<br>
-                <strong>TEL・FAX 123-456-789</strong>
-            </address>
-            <figure>
-                <img src="img/map.png" alt="マップ">
-            </figure>
+            <div class="access-row">
+                <address class="access-address">
+                    <strong>カフェ</strong><br>
+                    〒123-4567<br>
+                    東京都XX区XXX町1-2-3<br>
+                    <strong>TEL・FAX 123-456-789</strong>
+                </address>
+                <figure class="access-map">
+                    <img src="img/map.png" alt="マップ">
+                </figure>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <div>
-            <p>
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-logo">
                 <img src="img/logo_w.svg" alt="フッターロゴ">
             </p>
-            <div>
-                <nav>
-                    <ul>
+            <div class="footer-body">
+                <nav class="footer-nav">
+                    <ul class="footer-nav-list">
                         <li><a href="#about">about</a></li>
                         <li><a href="#menu">menu</a></li>
-                        <li><a href="#photo">photo</a></li>
+                        <li><a href="#photos">photos</a></li>
                         <li><a href="#access">access</a></li>
                     </ul>
                 </nav>
@@ -105,4 +111,5 @@
         </div>
     </footer>
 </body>
+
 </html>
