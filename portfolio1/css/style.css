@@ -372,6 +372,9 @@ section {
 .info-txt {
     color: #fff;
 }
+.info-txt p {
+    text-align: left;
+}
 @media screen and (min-width:768px) {
     .info-content {
         display: flex;
@@ -381,6 +384,10 @@ section {
     .info-txt {
         flex: 1;
         margin-right: 30px;
+        text-align: left;
+    }
+    .info-txt h2, p {
+        text-align: left;
     }
     .info-area img {
         flex: 1;
