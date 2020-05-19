@@ -4,9 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>カフェ</title>
+
     <meta name="keywords" content="カフェ,コーヒー,東京都">
     <meta name="description" content="カフェのホームページです">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="shortcut icon" href="img/favion.ico">
+    <link rel="apple-touch icon" href="img/apple-touch-icon.png">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,13 +20,11 @@
 <body>
     <header class="header">
         <h1 class="logo">
-            <img src="img/logo.svg" alt="ロゴ">
+            <img src="img/logo.svg" alt="CAFE">
         </h1>
-    </header>
-    <main class="main">
-        <figure class="top">
-            <img src="img/top.jpg" alt="トップ画">
-        </figure>
+
+        <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
+        <label for="navToggle" class="btn-burger"></label>
         <nav class="nav">
             <ul class="nav-list">
                 <li><a href="#about">about</a></li>
@@ -29,6 +33,10 @@
                 <li><a href="#access">access</a></li>
             </ul>
         </nav>
+    </header>
+
+    <main>
+        <div class="top"></div>
 
         <section class="section about" id="about">
             <h2 class="heading">
@@ -42,9 +50,12 @@
                 <img src="img/ttl_menu.svg" alt="menu">
             </h2>
             <ul class="menu-list">
-                <li>ブレンドコーヒー</li>
-                <li>エスプレッソ</li>
-                <li>カフェラテ</li>
+                <li>ブレンドコーヒー　500yen</li>
+                <li>エスプレッソ　400yen</li>
+                <li>カフェラテ　600yen</li>
+                <li>カフェモカ　600yen</li>
+                <li>ランチセット　1000yen</li>
+                <li>日替わりケーキセット　800yen</li>
             </ul>
         </section>
 
@@ -56,19 +67,19 @@
                 <li>
                     <figure>
                         <img src="img/photos_01.jpg" alt="フォト1">
-                        <figcaption>キャプション</figcaption>
+                        <figcaption>100種類以上のコーヒー豆を取り揃え、日替わりでおすすめのフレーバーをお楽しみいただけます</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure>
                         <img src="img/photos_02.jpg" alt="フォト2">
-                        <figcaption>キャプション</figcaption>
+                        <figcaption>焼きたてのパンやケーキセットなど、フードメニューも豊富にご用意しています</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure>
                         <img src="img/photos_03.jpg" alt="フォト3">
-                        <figcaption>キャプション</figcaption>
+                        <figcaption>ゆっくりとした時間が流れる落ち着いた雰囲気の店内</figcaption>
                     </figure>
                 </li>
             </ul>
@@ -76,38 +87,37 @@
 
         <section class="section access" id="access">
             <h2 class="heading">
-                <img src="img/ttl_access.svg" alt="photos">
+                <img src="img/ttl_access.svg" alt="access">
             </h2>
-            <div class="access-row">
-                <address class="access-address">
-                    <strong>カフェ</strong><br>
-                    〒123-4567<br>
-                    東京都XX区XXX町1-2-3<br>
-                    <strong>TEL・FAX 123-456-789</strong>
-                </address>
+            <div class="access-contents">
                 <figure class="access-map">
                     <img src="img/map.png" alt="マップ">
                 </figure>
+                <address class="access-address">
+                    <!-- <strong>カフェ</strong><br> -->
+                    〒123-4567 東京都XX区XXX町1-2-3<br>
+                    <strong>TEL・FAX 123-456-789</strong>
+                </address>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="footer-container">
-            <p class="footer-logo">
-                <img src="img/logo_w.svg" alt="フッターロゴ">
-            </p>
-            <div class="footer-body">
-                <nav class="footer-nav">
-                    <ul class="footer-nav-list">
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#menu">menu</a></li>
-                        <li><a href="#photos">photos</a></li>
-                        <li><a href="#access">access</a></li>
-                    </ul>
-                </nav>
-                <p><small>&copy;Copyright 2020 KURONEKO Corporation.</small></p>
-            </div>
+        <p class="footer-logo">
+            <a href="./index.html">
+                <img src="img/footer_logo.svg" alt="フッターロゴ">
+            </a>
+        </p>
+        <div class="footer-body">
+            <nav class="footer-nav">
+                <ul class="footer-nav-list">
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#menu">menu</a></li>
+                    <li><a href="#photos">photos</a></li>
+                    <li><a href="#access">access</a></li>
+                </ul>
+            </nav>
+            <p><small>&copy;Copyright 2020 KURONEKO Corporation.</small></p>
         </div>
     </footer>
 </body>

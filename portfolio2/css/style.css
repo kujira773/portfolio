@@ -1,7 +1,8 @@
 @charset "utf-8";
 
-/* 初期スタイル調整 */
+/* 初期スタイル */
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -15,8 +16,8 @@ body {
 
 h1, h2 {
     margin-top: 0;
-    margin-bottom: 30px;
-    line-height: 1.2;
+    margin-bottom: 10px;
+    line-height: 1.5;
 }
 
 a {
@@ -29,7 +30,7 @@ a:hover {
 
 p {
     margin-top: 0;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 ul {
@@ -50,63 +51,87 @@ img {
 address {
     font-style: normal;
 }
+/* 初期スタイル終わり */
 
 .header {
-    width: 1000px;
-    margin: 0 auto;
-    padding: 20px 0;
+    position: relative;
+    padding: 5px 0 0;
+    background-color: #fff;
 }
 
 .logo {
-    margin: 0;
-    text-align: center;
+    margin: 0 auto;
+    width: 250px;
+    padding-bottom: 5px;
 }
 
-.main {
-    width: 1000px;
-    margin: 0 auto;
+.nav-toggle {
+    display: none;
+}
+
+.btn-burger {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 2;
+    display: block;
+    width: 44px;
+    height: 44px;
+    background: url("../img/burger.svg") center center / 35px 20px no-repeat;
+    cursor: pointer;
+}
+.nav-toggle:checked ~ .btn-burger {
+    background: url("../img/close.svg") center center / 26px 26px no-repeat;
+}
+.nav {
+    padding-top: 10px;
+    background: url("../img/nav_bg.png") center center / cover no-repeat;
+}
+.nav-list {
+    display: none;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.nav-list li {
+    margin: 0;
+    padding: 10px;
+}
+.nav-list a {
+    display: block;
+    color: #fff;
+}
+.nav-toggle:checked ~ .nav .nav-list {
+    display: block;
 }
 
 .top {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.nav {
+    height: 300px;
     margin-bottom: 50px;
-    text-align: center;
-}
-.nav-list li {
-    display: inline-block;
-    margin: 0;
-    border-left: 1px solid #806342;
-}
-.nav-list li:first-child {
-    border-left: none;
-}
-.nav-list a {
-    display: inline-block;
-    padding: 0 15px;
-    line-height: 1.2;
-    text-transform: uppercase;
+    background: url("../img/top.jpg") center bottom /cover no-repeat;
 }
 
 .section {
-    margin: 0 auto 80px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 0 10px;
 }
 
 .heading {
-    margin-bottom: 40px;
-    text-align: center;
+    width: 200px;
+    margin: 0 auto 5px;
 }
 
 .about {
     text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .menu {
     text-align: center;
-}
+    margin-bottom: 50px;
+} 
 .menu-list {
     display: inline-block;
     margin-left: 30px;
@@ -116,23 +141,26 @@ address {
 .menu-list li {
     margin-bottom: 10px;
 }
-
-.photos {
-    width: 750px;
+.menu-list li:last-child {
+    margin-bottom: 0px;
 }
+
+/* .photos {
+    width: 300px;
+} */
 .photos-list li {
     margin-bottom: 30px;
 }
 .photos figcaption {
-    font-size: 12px;
+    font-size: 16px;
     text-align: left;
 }
 
 .access {
-    width: 600px;
+    text-align: center;
 }
-.access-row {
-    display: -webkit-box;
+.access-contents {
+    /* display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 
@@ -142,7 +170,7 @@ address {
 
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
+    align-items: center; */
 
     margin: 0 auto;
 }
@@ -155,39 +183,28 @@ address {
     font-size: 22px;
 }
 .access-map {
-    -webkit-box-flex: 0;
+    /* -webkit-box-flex: 0;
     -ms-flex: 0 1 295px;
-    flex: 0 1 295px;
+    flex: 0 1 295px; */
     max-width: 295px;
 }
 
 /* フッター */
 .footer {
-    min-width: 1000px;
-    margin: 0 auto;
-    padding: 20px 0;
-    background-color: #806342;
-}
-.footer-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-
-    width: 660px;
-    margin: 0 auto;
+    padding: 40px 0 30px;
+    color: #fff;
+    text-align: center;
+    background: url("../img/footer_bg.png");
 }
 .footer-logo {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 1 200px;
-    flex: 0 1 200px;
-    
-    max-width: 200px;
-    margin: 0;
+    margin-bottom: 10px;
+    width: 250px;
+    margin: 0 auto;
 }
 .footer-body {
-    -webkit-box-flex: 0;
+    /* -webkit-box-flex: 0;
     -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
+    flex: 0 1 auto; */
 
     padding-top: 20px;
 }
@@ -217,4 +234,176 @@ address {
 }
 .copyright small {
     font-size: 11px;
+}
+
+@media screen and (min-width:768px) {
+    /* body {
+        font-size: 16px;
+        line-height: 1.5;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #000;
+        background-color: #fff;
+    } */
+    
+    h1, h2 {
+        margin-top: 0;
+        margin-bottom: 30px;
+        line-height: 1.2;
+    }
+    
+    /* a {
+        color: #806342;
+        text-decoration: none;
+    } */
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    p {
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+    
+    ul {
+        margin: 1em 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    figure {
+        margin: 0;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* address {
+        font-style: normal;
+    } */
+    
+    .header {
+        padding: 5px 0 0;
+    }
+    
+    /* .logo {
+        width: auto;
+        margin: 0 0 20px;
+        padding: 0;
+        text-align: center;
+    } */
+    
+    .btn-burger {
+        display: none;
+    }
+    .nav {
+        padding: 40px 0;
+    }
+    .nav-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        
+        padding: 0;
+    }
+    .nav-list li {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        padding: 0 20px;
+        line-height: 1;
+        border-right: 1px solid #fff;
+    }
+    .nav-list li:first-child {
+        border-left: 1px solid #fff;
+    }
+    .nav-toggle:checked ~ .nav .nav-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    
+    
+    .top {
+        margin-bottom: 70px;
+        text-align: center;
+    }
+    
+    .section {
+        margin-bottom: 70px;
+    }
+    
+    .heading {
+        margin-bottom: 10px;
+    }
+
+    .menu-list {
+        display: inline-block;
+        margin-top: 0;
+        margin-left: 30px;
+        list-style: disc;
+        text-align: left;
+    }
+    .menu-list li {
+        margin-bottom: 10px;
+    }
+
+    .photos {
+        margin-top: 0;
+        width: 750px;
+    }
+    .photos-list li {
+        margin-bottom: 30px;
+    }
+    .photos figcaption {
+        font-size: 16px;
+        text-align: left;
+    }
+    
+    .access {
+        width: 600px;
+    }
+    .access-row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    
+        margin: 0 auto;
+    }
+    .access-address {
+        font-size: 14px;
+    }
+    .access-address strong {
+        display: block;
+        margin: 10px 0;
+        font-size: 22px;
+    }
+    .access-map {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 295px;
+        flex: 0 1 295px;
+        max-width: 295px;
+    }
+    
+    /* フッター */
+    .footer {
+        padding: 50px 0 20px;
+    }
 }
