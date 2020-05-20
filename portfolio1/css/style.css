@@ -160,8 +160,8 @@ section {
 }
 /* サイトロゴの表示 */
 .logo-area {
-    width: 150px;
-    margin: 0;
+    width: 250px;
+    margin: 10px;
     text-align: left;
 }
 
