@@ -1,0 +1,154 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 10px auto;
+    color: #fff;
+}
+
+h3 {
+    text-align: left;
+}
+
+p {
+    font-size: 16px;
+}
+
+header {
+    background: url("../img/footer.jpg");
+    height: 100px;
+    padding-top: 20px;
+}
+.mask {
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.portfolio {
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+}
+
+.portfolio-contents {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0px;
+    /* margin: 0 auto; */
+}
+
+.portfolio-description {
+    flex: 1;
+    text-align: center;
+    padding: 20px 20px 0;
+    width: 400px;
+}
+
+.portfolio-img {
+    /* width:			400px; */
+    height: 100%;
+    overflow: hidden;
+    margin: 10px 8px 10px 16px;
+    position: relative;
+}
+
+.portfolio-img img {
+    width: 400px;
+}
+
+.portfolio-img .caption {
+    /* font-size:		130%; */
+    color: #fff;
+    padding-top: 80px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.portfolio-img .mask {
+    /* width:			400px; */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    /* マスクを表示しない */
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+.portfolio-img:hover .mask {
+    opacity: 1;
+    /* マスクを表示する */
+}
+
+/* ボタン */
+.btn-flat-border {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: rgba(114, 204, 189);
+    border: solid 2px rgba(114, 204, 189);
+    border-radius: 3px;
+    transition: .4s;
+}
+.btn-flat-border:hover {
+    background: rgba(114, 204, 189);
+    color: white;
+}
+
+/* フッター部分 */
+.profile-box {
+    position: relative;
+    height: 500px;
+    margin-top: 50px;
+    padding: 10px 10px 15px;
+    position: relative;
+    font-size: 16px;
+    background: url(../img/footer.jpg);
+    color: rgb(0, 0, 0);
+}
+.profile-box img {
+    display:block;
+    width: 100px;
+    height: 100px;
+    float: left;
+    /*画像周りの余白*/
+    margin: 0 20px 7px 10px;
+}
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 800px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.wrapper .profile-box_name {
+    margin: 0 0 7px;
+    padding: 0;
+    font-size: 20px;
+    /*文字サイズ*/
+    font-weight: bolder;
+}
+.wrapper .profile-box_contents p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 30px;
+}
