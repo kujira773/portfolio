@@ -1,7 +1,18 @@
 @charset "utf-8";
+* {
+    box-sizing: border-box;
+}
 
 body {
     background: url("../img/form-background.jpg") no-repeat center center / cover;
+}
+
+.wrapper {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 150px;
+    box-sizing: border-box;
+    /*←全て含めてmin-height:100vhに*/
 }
 
 h1 {
@@ -18,6 +29,12 @@ form {
     background: rgba(185, 183, 183, 0.376);
     padding: 40px 0;
     box-shadow: 2px 2px 4px gray;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 dl {
@@ -32,15 +49,20 @@ dl {
     /* width: 100%; */
 }
 
-/* .form-item */ dt { 
+/* .form-item */
+
+dt {
     width: 200px;
 }
 
-/* .form-item */ dd { 
+/* .form-item */
+
+dd {
     width: 300px;
 }
 
 /* 入力フォーム */
+
 input[type="text"], input[type="email"], select, textarea {
     display: block;
     width: 100%;
@@ -52,11 +74,13 @@ input[type="text"], input[type="email"], select, textarea {
 }
 
 /* セレクトボックス */
+
 select {
     height: 2em;
 }
 
 /* ラジオボタン */
+
 input[type="radio"] {
     width: 16px;
     height: 16px;
@@ -68,19 +92,21 @@ textarea {
 }
 
 /* 必須マーク、任意マーク */
+
 .must {
-	background: #FF1A00;
+    background: #FF1A00;
 }
+
 .free {
-	background: #999;
+    background: #999;
 }
-.must,
-.free {
-	color: #FFF;
-	border-radius: 3px;
-	font-size: 10px;
+
+.must, .free {
+    color: #FFF;
+    border-radius: 3px;
+    font-size: 10px;
     margin-right: 10px;
-	padding: 5px 5px;
+    padding: 5px 5px;
     letter-spacing: 0.1em;
 }
 
@@ -90,9 +116,11 @@ textarea {
 }
 
 /* 送信ボタン */
+
 .form-submit {
     text-align: center;
 }
+
 input[type="submit"] {
     background: #76c0ba;
     width: 200px;
@@ -104,6 +132,7 @@ input[type="submit"] {
 }
 
 /* PC */
+
 @media screen and (min-width:769px) {
     input[type="submit"]:hover {
         background: #76c0ba;
@@ -111,9 +140,11 @@ input[type="submit"] {
 }
 
 /* モバイル */
+
 @media screen and (max-width:768px) {
     form {
         padding: 20px 0;
+        margin-bottom: 20px;
     }
     dl {
         /* width: 300px; */
@@ -133,15 +164,20 @@ input[type="submit"] {
     input[type="submit"] {
         padding: 1em;
     }
-    
 }
+
 /* フッター */
-.foot-area_copy {
-    color: #ccc;
-    font-size: 12px;
-    display: inline-block;
+footer {
     width: 100%;
-    padding: 10px;
-    background-color: #333;
+    background-color: #a2d4ca;
+    color: #fff;
     text-align: center;
+    padding: 30px 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.foot-logo {
+    margin: 0 auto 20px;
+    width: 300px;
 }
