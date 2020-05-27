@@ -114,7 +114,8 @@ section {
 }
 
 .btn:hover, .btn:focus {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(110, 180, 165, 0.657);
+    color: #000;
     cursor: pointer;
 }
 
@@ -122,7 +123,7 @@ section {
 
 .btn-reserve {
     color: #fff;
-    background: #2c2c2e;
+    background: rgb(110, 180, 165);
 }
 
 /* レイアウト関連 */
@@ -536,14 +537,17 @@ section {
     padding-bottom: 0;
 }
 
-.access-area img {
+.txt-lead {
+    text-align: center;
+}
+/* .access-area img {
     display: block;
     max-width: 280px;
     max-height: 280px;
     border-radius: 50%;
     overflow: hidden;
     margin: 10px auto 30px;
-}
+} */
 
 .access-map-area {
     position: relative;
@@ -559,12 +563,6 @@ section {
 }
 
 @media screen and (min-width: 768px) {
-    .access-content {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding-left: 150px;
-    }
     .access-map-area {
         position: relative;
         padding-top: 30%;
@@ -572,6 +570,7 @@ section {
 }
 
 /* ページトップ */
+
 .pagetop {
     text-align: right;
     padding: 15px;
