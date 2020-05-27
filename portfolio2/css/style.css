@@ -118,6 +118,14 @@ address {
     margin: 0 auto 5px;
 }
 
+.container {
+    text-align: center;
+}
+
+.swiper-slide img {
+    height: 300px;
+}
+
 .about {
     text-align: center;
     margin: 0 auto;
@@ -295,6 +303,10 @@ address {
     
     .heading {
         margin-bottom: 10px;
+    }
+
+    .swiper-slide img {
+        height: 500px;
     }
 
     .menu-list {
