@@ -97,4 +97,5 @@
 ## iv. 参考にしたデータ・サイト
 * [神楽坂茶寮](https://saryo.jp/)
 * [小苦樂](https://www.kokura-bluecampjapan.com/sweets)
+* [Ferret - 「【調査データ】SHIBUYA109が調査！around20の82.9％はInstagramで情報収集」](https://ferret-plus.com/13063)
 * [東洋経済オンライン - 「カフェ経営を成功させる人は何が違うのか」](https://toyokeizai.net/articles/-/175689?page=3)
