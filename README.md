@@ -52,6 +52,7 @@
 ## iv. 参考にしたデータ・サイト
 * [ひつじ不動産 - 「どんな人が住んでるの？」](https://www.hituji.jp/comret/introduction/people)
 * [SOCIAL APARTMENT - 「ソーシャルアパートメントに住んでる人ってこんな人！」](https://www.social-apartment.com/lifestyle/detail/infografic)
-* [ジャパンネット銀行 - 「ミレニアル世代と親世代、「住まいと暮らし」の価値観を調査](https://www.japannetbank.co.jp/company/news2019/190219.html?v=190219)
+* [ジャパンネット銀行 - 「ミレニアル世代と親世代、「住まいと暮らし」の価値観を調査」](https://www.japannetbank.co.jp/company/news2019/190219.html?v=190219)
+* [ジャパンネット銀行 - 「ミレニアル世代の“シェア消費”事情は？　利用意向・利用実態を調査」](https://www.japannetbank.co.jp/company/news2018/180215.html)
 
 # 3. ポートフォリオ2
