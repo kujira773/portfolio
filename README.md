@@ -50,6 +50,6 @@
 ## iii. UX、UIを意識したポイント
 
 ## iv. 参考にしたデータ・サイト
-
+* [SOCIAL APARTMENT コラム　「ソーシャルアパートメントに住んでる人ってこんな人！」](https://www.social-apartment.com/lifestyle/detail/infografic)
 
 # 3. ポートフォリオ2
