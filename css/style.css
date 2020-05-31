@@ -1,154 +1,267 @@
 @charset "utf-8";
+
+/* 全体のスタイル */
 * {
     box-sizing: border-box;
 }
 
+/* 初期スタイル調整 */
 body {
-    font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 16px;
+    line-height: 1.5;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 400;
+    background-color: #fff;
 }
 
 h1 {
+    line-height: 1.5;
+    letter-spacing: 0.2em;
     text-align: center;
-    font-size: 40px;
+    /* font-size: 20px; */
     margin: 10px auto;
     color: #fff;
 }
 
 h3 {
+    line-height: 1.5;
+    letter-spacing: 0.2em;
     text-align: left;
 }
 
 p {
-    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+    text-align: justify;
 }
 
-header {
-    background: url("../img/footer.jpg");
-    height: 100px;
-    padding-top: 20px;
+ul {
+    margin: 1em 0;
+    padding-inline-start: 0px;
+    list-style: none;
 }
-.mask {
-    height: 100px;
-    background-color: rgba(255, 255, 255, 0.5);
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 60px 0;
+    margin: 0 auto;
+}
+@media screen and (min-width:768px) {
+    section {
+        max-width: 1200px;
+    }
+}
+
+/* モバイルでは表示する */
+.sp-only {
+    display: block;
+    background: rgba(0, 0, 0, 0.8);
+}
+/* モバイルでは非表示にする */
+.pc-only {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    /* PCでは非表示にする */
+    .sp-only {
+        display: none;
+    }
+    .pc-only {
+        display: block;
+    }
+}
+
+/* ヘッダー */
+.header-area {
+    position: relative;
+    background: url("../img/footer.jpg");
+    height: 300px;
+    padding-top: 10px;
+}
+.inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* width: 300px; */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .portfolio {
     background-color: rgb(255, 255, 255);
-    margin: 0 auto;
 }
 
 .portfolio-contents {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    padding: auto;
 }
-
-ul {
-    list-style: none;
-    padding-inline-start: 0px;
-    /* margin: 0 auto; */
+@media screen and (min-width:768px) {
+    .portfolio-contents {
+        max-width: 1200px;
+    }
 }
 
 .portfolio-description {
     flex: 1;
-    text-align: center;
     padding: 20px 20px 0;
     width: 400px;
 }
 
 .portfolio-img {
-    /* width:			400px; */
+    width: 400px;
     height: 100%;
     overflow: hidden;
-    margin: 10px 8px 10px 16px;
+    margin: 0 auto;
     position: relative;
 }
-
 .portfolio-img img {
     width: 400px;
 }
-
 .portfolio-img .caption {
-    /* font-size:		130%; */
     color: #fff;
-    padding-top: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     padding-left: 20px;
+    padding-right: 20px;
     text-align: left;
 }
 
-.portfolio-img .mask {
-    /* width:			400px; */
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    /* マスクを表示しない */
-    background-color: rgba(0, 0, 0, 0.8);
-    -webkit-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
-}
-
-.portfolio-img:hover .mask {
-    opacity: 1;
-    /* マスクを表示する */
+@media screen and (min-width:768px) {
+    .portfolio-img {
+        /* width: 400px; */
+        height: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+        position: relative;
+    }
+    .portfolio-img img {
+        width: 400px;
+    }
+    .portfolio-img .mask {
+        width: 400px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        /* マスクを表示しない */
+        background-color: rgba(0, 0, 0, 0.8);
+        -webkit-transition: all 0.4s ease-out;
+        transition: all 0.4s ease-out;
+    }
+    .portfolio-img:hover .mask {
+        opacity: 1;
+        /* マスクを表示する */
+    }
 }
 
 /* ボタン */
 .btn-flat-border {
     display: inline-block;
-    padding: 0.3em 1em;
+    /* padding: 0.3em 1em; */
+    padding: 20px 35px;
+    border-radius: 8px;
     text-decoration: none;
     color: rgba(114, 204, 189);
+    background: rgba(255, 255, 255, 0);
     border: solid 2px rgba(114, 204, 189);
-    border-radius: 3px;
     transition: .4s;
 }
-.btn-flat-border:hover {
+
+.btn-flat-border:hover,
+.btn-flat-border:focus
+ {
     background: rgba(114, 204, 189);
     color: white;
+    cursor: pointer;
 }
 
 /* フッター部分 */
-.profile-box {
+.footer-area {
     position: relative;
     height: 500px;
-    margin-top: 50px;
-    padding: 10px 10px 15px;
-    position: relative;
-    font-size: 16px;
+    padding-top: 50px;
     background: url(../img/footer.jpg);
-    color: rgb(0, 0, 0);
 }
-.profile-box img {
-    display:block;
+.footer-area img {
+    display: block;
     width: 100px;
     height: 100px;
     float: left;
     /*画像周りの余白*/
     margin: 0 20px 7px 10px;
 }
-.wrapper {
+.inner {
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 800px;
+    width: 500px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.5);
 }
-.wrapper .profile-box_name {
+.inner .profile-box_name {
     margin: 0 0 7px;
     padding: 0;
     font-size: 20px;
     /*文字サイズ*/
     font-weight: bolder;
 }
-.wrapper .profile-box_contents p {
+.inner .profile-box_contents p {
     margin: 0;
     padding: 0;
     font-size: 16px;
     line-height: 30px;
+}
+@media screen and (min-width:768px) {
+    /* .footer-area {
+        position: relative;
+        height: 500px;
+        margin-top: 50px;
+        padding: 10px 10px 15px;
+        position: relative;
+        font-size: 16px;
+        background: url(../img/footer.jpg);
+        color: rgb(0, 0, 0);
+    } */
+    /* .footer-area img {
+        display: block;
+        width: 100px;
+        height: 100px;
+        float: left;
+        
+        margin: 0 20px 7px 10px;
+    } */
+    .inner {
+        /* position: absolute; */
+        /* top: 50%;
+        left: 50%; */
+        /* -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); */
+        width: 800px;
+        padding: 20px;
+        /* background-color: rgba(255, 255, 255, 0.5); */
+    }
+    .inner .profile-box_name {
+        /* margin: 0 0 7px;
+        padding: 0; */
+        font-size: 20px;
+        
+        /* font-weight: bolder; */
+    }
+    .inner .profile-box_contents p {
+        /* margin: 0;
+        padding: 0; */
+        font-size: 16px;
+    }
 }
