@@ -91,12 +91,12 @@ photoshop, illustractorの使い方を勉強しました
 * 家賃の情報よりも口コミやサービスの魅力を伝えるセクションを上部に置くことで、早い段階での離脱を防ぐ　
 
 ## iv. 参考にしたデータ・サイト
-* [ひつじ不動産 - 「どんな人が住んでるの？」](https://www.hituji.jp/comret/introduction/people),
-[SOCIAL APARTMENT - 「ソーシャルアパートメントに住んでる人ってこんな人！」](https://www.social-apartment.com/lifestyle/detail/infografic),
-[ジャパンネット銀行 - 「ミレニアル世代の“シェア消費”事情は？　利用意向・利用実態を調査」](https://www.japannetbank.co.jp/company/news2018/180215.html)
+* [ひつじ不動産 - 「どんな人が住んでるの？」](https://www.hituji.jp/comret/introduction/people),  
+[SOCIAL APARTMENT - 「ソーシャルアパートメントに住んでる人ってこんな人！」](https://www.social-apartment.com/lifestyle/detail/infografic),  
+[ジャパンネット銀行 - 「ミレニアル世代の“シェア消費”事情は？　利用意向・利用実態を調査」](https://www.japannetbank.co.jp/company/news2018/180215.html)  
 シェアハウスに住む人の年齢層・職業・趣味などについて参考にしました  
 
-* [シェアハウス　フレッシュルーム](https://www.freshroom.jp/)
+* [シェアハウス　フレッシュルーム](https://www.freshroom.jp/)  
 コンセプトや内装など参考にしました。
 
 # 3. ポートフォリオ:古民家風カフェのwebサイト
