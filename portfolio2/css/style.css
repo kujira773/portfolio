@@ -110,7 +110,7 @@ address {
 }
 
 .section {
-    max-width: 1000px;
+    /* max-width: 1000px; */
     margin: 0 auto;
     margin-bottom: 50px;
     padding: 0 10px;
@@ -195,6 +195,7 @@ ul.snsbtniti {
 .menu {
     text-align: center;
     margin-bottom: 50px;
+    background-image: url(../img/menu-bg.jpg);
 }
 .menu-list {
     display: inline-block;
