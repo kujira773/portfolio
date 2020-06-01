@@ -134,7 +134,7 @@ photoshop, illustractorの基本的な操作を学び、画像の編集やイラ
 ## iv. 参考にしたデータ・サイト
 * [神楽坂茶寮](https://saryo.jp/)、[小苦樂](https://www.kokura-bluecampjapan.com/sweets)  
 スライダーのあるトップページのデザインの参考にしました
-* [Ferret - 「【調査データ】SHIBUYA109が調査！around20の82.9％はInstagramで情報収集」](https://ferret-plus.com/13063)
+* [Ferret - 「【調査データ】SHIBUYA109が調査！around20の82.9％はInstagramで情報収集」](https://ferret-plus.com/13063)  
 遊びに行く場所を検索する場合インスタグラムを使う人が多いことや、カフェに関するハッシュタグ投稿が多いことから、SNSのシェアボタンは口コミを増やすためにトップページに必要だと考えました
-* [東洋経済オンライン - 「カフェ経営を成功させる人は何が違うのか」](https://toyokeizai.net/articles/-/175689?page=3)
-デザインとは直接関係はありませんが、古民家カフェを経営する人がどんなことを考えているのか・・・
+* [東洋経済オンライン - 「カフェ経営を成功させる人は何が違うのか」](https://toyokeizai.net/articles/-/175689?page=3)  
+今回のデザインとは直接関係はありませんが、古民家カフェを経営する人がどんなことを考えているのか知るために調べました
