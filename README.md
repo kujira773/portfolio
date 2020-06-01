@@ -45,7 +45,7 @@
 * 今回はユーザーからのフィードバックはなく、単に改善のサイクルを回す目的で作業していたので、エンドユーザーの視点が必要
 
 ## vi. 参考にした書籍・サイト
-* Webデザイン基礎入門、HTML+CSS標準入門、JavaScript基礎入門(エムディエヌコーポレーション)  
+* [Webデザイン基礎入門](https://books.mdn.co.jp/books/3219203009/)、[HTML+CSS標準入門](https://books.mdn.co.jp/books/3219203017/)、[JavaScript基礎入門](https://books.mdn.co.jp/books/3219203012/)(エムディエヌコーポレーション)  
 コーディングの基本を体系的に学習し、モバイルファーストのサイトのレイアウトやナビメニューのcssなどを参考にしました
 * [未経験からプロのWebデザイナーになる！ 400レッスン以上の完全マスターコース](https://www.udemy.com/course/web-design-master/)  
 photoshop, illustractorの基本的な操作を学び、画像の編集やイラストの作成を実際にポートフィリオで活かしました。
