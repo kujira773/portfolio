@@ -93,9 +93,7 @@ photoshop, illustractorの基本的なツールの操作を学び、画像の編
 * 口コミ・サービス(企業が知ってもらいたい情報)〜プラン・金額(ユーザーが1番知りたい情報)の順番にセクションを配置することで、ページを最後まで見てもらう
 
 ## iv. 参考にしたデータ・サイト
-* [ひつじ不動産 - 「どんな人が住んでるの？」](https://www.hituji.jp/comret/introduction/people),  
-[SOCIAL APARTMENT - 「ソーシャルアパートメントに住んでる人ってこんな人！」](https://www.social-apartment.com/lifestyle/detail/infografic),  
-[ジャパンネット銀行 - 「ミレニアル世代の“シェア消費”事情は？　利用意向・利用実態を調査」](https://www.japannetbank.co.jp/company/news2018/180215.html)  
+* [ひつじ不動産 - 「どんな人が住んでるの？」](https://www.hituji.jp/comret/introduction/people)、[SOCIAL APARTMENT - 「ソーシャルアパートメントに住んでる人ってこんな人！」](https://www.social-apartment.com/lifestyle/detail/infografic)、[ジャパンネット銀行 - 「ミレニアル世代の“シェア消費”事情は？　利用意向・利用実態を調査」](https://www.japannetbank.co.jp/company/news2018/180215.html)  
 実際にシェアハウスを利用している人の年齢層は20~30代が多いということ、初対面でも共通点が見出しやすい趣味(旅行・スポーツ・読書など)を持つ人が多いこと、ミレニアル世代がシェアサービスについて他の世代よりも肯定的な考えを持っているというデータはペルソナ設定の根拠になった
 
 * [ヘルスコンシャスな女性のためのシェアハウス](https://www.freshroom.jp/property/331/)  
