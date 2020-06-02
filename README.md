@@ -29,11 +29,11 @@
 
 ###  カンバン
 機能ごとのカンバンを作成し優先順位をつけることで、ポートフォリオ全体の進捗具合を可視化することができた  
-[作成したカンバンはこちら]()　　
+[作成したカンバン](https://github.com/kujira773/portfolio/projects/1)　　
 
 ###  KPT
 ポートフォリオの足りない部分・作業で効率が悪かった点など、区切りのついたところでこまめに振り返ることで、やり直しの回数を減らした   
-[作成したKPIはこちら](https://github.com/kujiraf/webfront-study/projects/2)　　
+[作成したKPI](https://github.com/kujiraf/webfront-study/projects/2)　　
 
 ## iii.　今後の課題　　
 * KPTは最初problemばかりだったので、これからkeep(良い振り返り)も増やしていくこと
