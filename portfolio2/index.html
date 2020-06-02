@@ -39,10 +39,6 @@
     </header>
 
     <main>
-        <!-- <h1>
-            <img src="img/top.jpg" alt="CAFEのホームページ">
-        </h1> -->
-
         <div class="container">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -71,10 +67,61 @@
                 },
                 autoplay: {
                     delay: 3000,
-                    disableOnInteraction: true
+                    disableOnInteraction: true,
+
                 },
                 autoHeight: true,
             });
+
+            // Fade-In
+            var fadeIn = function (element, time, callback) {
+                var fadeTime = (time) ? time : 400,
+                    keyFrame = 30,
+                    stepTime = fadeTime / keyFrame,
+                    maxOpacity = 1,
+                    stepOpacity = maxOpacity / keyFrame,
+                    opacityValue = 0,
+                    sId = '';
+
+                if (!element) return;
+
+                if (element.getAttribute('data-fade-stock-display') !== undefined &&
+                    element.getAttribute('data-fade-stock-display') !== null) {
+                    element.style.display = element.getAttribute('data-fade-stock-display');
+                }
+
+                var setOpacity = function (setNumber) {
+                    if ('opacity' in element.style) {
+                        element.style.opacity = setNumber;
+                    } else {
+                        element.style.filter = 'alpha(opacity=' + (setNumber * 100) + ')';
+
+                        if (navigator.userAgent.toLowerCase().match(/msie/) &&
+                            !window.opera && !element.currentStyle.hasLayout) {
+                            element.style.zoom = 1;
+                        }
+                    }
+                };
+
+                if (!callback || typeof callback !== 'function') callback = function () { };
+
+                setOpacity(0);
+
+                sId = setInterval(function () {
+                    opacityValue = Number((opacityValue + stepOpacity).toFixed(12));
+
+                    if (opacityValue > maxOpacity) {
+                        opacityValue = maxOpacity;
+                        clearInterval(sId);
+                    }
+
+                    setOpacity(opacityValue);
+
+                    if (opacityValue === maxOpacity) callback();
+                }, stepTime);
+
+                return element;
+            };
         </script>
 
         <section class="sns-area">
