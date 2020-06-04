@@ -3,12 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=devicce-width, initual-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--レスポンシブ対応にする-->
     <meta name="format-detection" content="telephone=no">
     <!--電話番号のリンクを無効にする-->
-    <title>ページのタイトル</title>
+    <title>SHARE HOUSE</title>
     <meta name="description" content="ページの内容を説明する文章">
+
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -18,7 +22,7 @@
     <header class="header">
         <div class="header-logo-menu">
             <div class="logo-area">
-                <img src="img/site-logo-w.png" alt="ロゴ">
+                <img src="img/site-logo.png" alt="SHARE HOUSE">
             </div>
             <nav class="sp-only">
                 <div class="gnav-toggle">
@@ -46,6 +50,9 @@
             <nav class="pc-only">
                 <ul class="gnav-menu">
                     <li class="gnav-item">
+                        <a href="#concept">Concept<br>コンセプト</a>
+                    </li>
+                    <li class="gnav-item">
                         <a href="#service">Service<br>サービス</a>
                     </li>
                     <li class="gnav-item">
@@ -64,57 +71,72 @@
 
     <main>
         <section id="mv" class="mv-area">
-            <h1 class="mv-title">テラスなシェアハウス生活<br class="sp-only">はじまる。</h1>
+            <h1 class="mv-title">女性のための<br class="sp-only">ヘルシーなシェアハウス</h1>
             <button type="mv-title" onclick="location.href='form.html'" class="btn btn-reserve">お申し込みはこちら</button>
         </section>
 
-        <!-- できたらユーザーの声を追加する -->
-        <section id="users" class="user-area">
-            <div class="users-inner">
-                <h3 class="h3-title">入居者様の声続々！</h3>
+        <section id="users" class="users-area">
+            <div class="inner">
+                <h2 class="h2-title">入居者様の声続々！</h2>
                 <ul class="user-content">
                     <li class="user-content-inner">
-                        <img src="img/user01.jpg" alt="ユーザー">
-                        <h4>Aさん</h4>
-                        <p>ペット可なのが即決ポイントでした！<br>※種類等による</p>
+                        <img src="img/user01.jpg" alt="ユーザーの声１">
+                        <h4>Aさん(22歳・学生)</h4>
+                        <p>同じ趣味の友達が増えて楽しいです！</p>
                     </li>
                     <li class="user-content-inner">
-                        <img src="img/user02.jpg" alt="ユーザー">
-                        <h4>Bさん</h4>
-                        <p>お酒を飲む仲間ができて楽しいです</p>
+                        <img src="img/user02.jpg" alt="ユーザーの声２">
+                        <h4>Bさん(25歳・会社員)</h4>
+                        <p>朝活のヨガのおかげでストレスフリーに</p>
                     </li>
                     <li class="user-content-inner">
-                        <img src="img/user03.jpg" alt="ユーザー">
-                        <h4>Cさん</h4>
-                        <p>外国人も多く、国際色豊かデス</p>
+                        <img src="img/user03.jpg" alt="ユーザーの声３">
+                        <h4>Cさん(30歳・フリーランス)</h4>
+                        <p>みんなで料理をしたり、食生活も改善しました</p>
                     </li>
                 </ul>
             </div>
         </section>
-        <!-- ここまで -->
 
         <section id="info" class="info-area">
             <div class="inner info-content">
+                <img src="img/img-info.jpg" alt="シェアハウスの紹介文">
                 <div class="info-txt">
-                    <h2>紹介文の<br class="sp-only">タイトル</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-                        quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
-                        rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
-                        Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
-                        tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
-                        dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
-                        Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
-                        ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus,
-                        sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel,
-                        luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
-                        sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus
-                        tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed
-                        consequat, leo eget bibendum sodales, augue velit cursus nunc,
-                        <br>改行</p>
+                    <h2>健康と美容は<br>ヘルシーな環境作りから始めよう</h2>
+                    <p>スポーツジムや教室に通うのではなく、フィットネスやヨガを自宅でできたら…そんな思いを叶えるシェアハウスでヘルシーな毎日を過ごしてみませんか？<br></p>
                 </div>
-                <img src="img/img-info.jpg" alt="紹介文の写真">
+            </div>
+        </section>
+
+        <section id="concept" class="plan-area">
+            <div class="inner">
+                <h2 class="h2-title">CONCEPT</h2>
+                <h3>コンセプト</h3>
+                <p class="txt-center">健康と美しさを保つための<br class="sp-only">ライフスタイルを提供します</p>
+                <ul class="plan-content">
+                    <li class="plan-item">
+                        <img src="img/lifestyle_01.jpg" alt="プラン１">
+                        <div class="plan-info">
+                            <h4 class="plan-title">フリードリンク</h4>
+                            <p>毎日フレッシュなコールドプレスジュースをお楽しみいただけます</p>
+                        </div>
+                    </li>
+                    <li class="plan-item">
+                        <img src="img/lifestyle_02.jpg" alt="プラン2">
+                        <div class="plan-info">
+                            <h4 class="plan-title">ヨガレッスン</h4>
+                            <p>インストラクターが毎週開催するヨガレッスン　※参加費別途</p>
+                        </div>
+                    </li>
+                    <li class="plan-item">
+                        <img src="img/lifestyle_03.jpg" alt="プラン3">
+                        <div class="plan-info">
+                            <h4 class="plan-title">ウェアレンタル</h4>
+                            <p>ヨガやランニングに必要なウェアはお得にレンタルでコスパ良し</p>
+                        </div>
+                    </li>
+                </ul>
+                <button type="button" onclick="location.href='#'" class="btn btn-reserve">お申し込みはこちら</button>
             </div>
         </section>
 
@@ -127,19 +149,19 @@
             <ul class="service-content">
                 <li class="service-item">
                     <img src="img/service-icon_01.svg" alt="Free Wi-Fi">
-                    <h4>無料のWi-Fiを完備</h4>
+                    <h4>オートロック完備</h4>
                 </li>
                 <li class="service-item">
                     <img src="img/service-icon_02.svg" alt="Rental Cycle">
-                    <h4>便利な自転車レンタル</h4>
+                    <h4>無料Wi-Fi</h4>
                 </li>
                 <li class="service-item">
-                    <img src="img/service-icon_03.svg" alt="Catering">
-                    <h4>ドリンクサービス</h4>
+                    <img src="img/service-icon_03.svg" alt="Drink service">
+                    <h4>自転車レンタル</h4>
                 </li>
                 <li class="service-item">
-                    <img src="img/service-icon_04.svg" alt="Cosutomer Service">
-                    <h4>安心の電話サポート充実</h4>
+                    <img src="img/service-icon_04.svg" alt="Customer Service">
+                    <h4>電話サポート</h4>
                 </li>
             </ul>
         </section>
@@ -147,66 +169,67 @@
         <section id="plan" class="plan-area">
             <div class="inner">
                 <h2 class="h2-title">Plan</h2>
-                <h3>ご利用プラン</h3>
-                <p class="txt-center">ライフスタイル・人数に合わせて、<br class="sp-only">お好みの間取りをお選びいただけます</p>
+                <h3>お部屋を選ぶ</h3>
+                <!-- <p class="txt-center">ライフスタイルに合わせて、<br class="sp-only">お好みの間取りをお選びいただけます</p> -->
                 <ul class="plan-content">
                     <li class="plan-item">
                         <img src="img/img-plan_01.jpg" alt="プラン１">
                         <div class="plan-info">
-                            <h4 class="plan-title">ひとり部屋プラン</h4>
-                            <p>プライベートな時間も大切にしたい方向け</p>
+                            <h4 class="plan-title"> 1F　101号室</h4>
+                            <p></p>
                             <ul class="plan-list">
-                                <li>1人用</li>
-                                <li>1DK</li>
+                                <li>1L</li>
+                                <li>テレビ、机、洋服ラック</li>
                             </ul>
-                            <p class="plan-price">75,000円(月額)</p>
+                            <p class="plan-price">75,000円(＋管理費15,000円)</p>
                         </div>
                     </li>
                     <li class="plan-item">
                         <img src="img/img-plan_02.jpg" alt="プラン2">
                         <div class="plan-info">
-                            <h4 class="plan-title">フレンズプラン</h4>
-                            <p>気の知れた友達とお得にシェア生活</p>
+                            <h4 class="plan-title">2F　202号室</h4>
+                            <p></p>
                             <ul class="plan-list">
-                                <li>2人用</li>
-                                <li>2LDK</li>
+                                <li>1L</li>
+                                <li>テレビ、机、洋服ラック</li>
                             </ul>
-                            <p class="plan-price">80,000円(月額)</p>
+                            <p class="plan-price">80,000円(＋管理費15,000円)</p>
                         </div>
                     </li>
                     <li class="plan-item">
                         <img src="img/img-plan_03.jpg" alt="プラン3">
                         <div class="plan-info">
-                            <h4 class="plan-title">テラスハウスプラン</h4>
-                            <p>大人数で賑やかに暮らしたいならおすすめ</p>
+                            <h4 class="plan-title">3F　303号室</h4>
+                            <p></p>
                             <ul class="plan-list">
-                                <li>3〜4人</li>
-                                <li>3LDK</li>
+                                <li>1L</li>
+                                <li>テレビ、机、洋服ラック</li>
                             </ul>
-                            <p class="plan-price">90,000円(月額)</p>
+                            <p class="plan-price">90,000円(＋管理費15,000円)</p>
                         </div>
                     </li>
                 </ul>
-                <button type="button" onclick="location.href='#'" class="btn btn-reserve">お申し込みはこちら</button>
+                <button type="button" onclick="location.href='form.html'" class="btn btn-reserve">お申し込みはこちら</button>
             </div>
         </section>
 
         <section id="access" class="access-area">
             <div class="inner">
-                <h2 class="hs-title">Access</h2>
+                <h2 class="h2-title">Access</h2>
                 <h3>アクセス</h3>
                 <div class="access-content">
                     <div>
                         <p class="txt-lead">電車でお越しの場合<br><br>
                             渋谷駅徒歩15分</p>
                     </div>
-                    <img src="img/img-access.jpg" alt="アクセス写真">
+                    <!-- <img src="img/access-img.jpg" alt="シェアハウスの外観写真"> -->
                 </div>
             </div>
-            <div class="access-maparea">
+
+            <div class="access-map-area">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7701641546632!2d139.69944175038086!3d35.65803388010251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563b00109f%3A0x337328def1e2ab26!2z5riL6LC36aeF!5e0!3m2!1sja!2sjp!4v1588558099518!5m2!1sja!2sjp"
-                    width="800" height="400" frameborder="0" style="border:0;" allowfullscreen=""
+                    width="600" height="400" frameborder="0" style="border:0;" allowfullscreen=""
                     class="access-map"></iframe>
             </div>
         </section>
@@ -218,7 +241,7 @@
     <footer class="foot-area">
         <div class="inner">
             <div class="logo-area foot-logo">
-                <img src="img/site-logo-w.png" alt="フッターロゴ">
+                <img src="img/site-logo-w.png" alt="SHARE HOUSE">
             </div>
             <p class="txt-center">ご入居・プランついて、<br class="sp-only">お気軽にお問い合わせください</p>
             <address class="text-phone">
