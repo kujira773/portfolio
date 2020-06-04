@@ -15,6 +15,9 @@
     <link rel="apple-touch icon" href="img/apple-touch-icon.png">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.css">
 </head>
 
 <body>
@@ -36,15 +39,107 @@
     </header>
 
     <main>
-        <h1>
-            <img src="img/top.jpg" alt="CAFEのホームページ">
-        </h1>
+        <div class="container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/slide1.jpg" alt="Swiper01"></div>
+                    <div class="swiper-slide"><img src="img/slide2.jpg" alt="Swiper02"></div>
+                    <div class="swiper-slide"><img src="img/slide3.jpg" alt="Swiper03"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+        <script src="js/swiper.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: true,
+
+                },
+                autoHeight: true,
+            });
+
+            // Fade-In
+            var fadeIn = function (element, time, callback) {
+                var fadeTime = (time) ? time : 400,
+                    keyFrame = 30,
+                    stepTime = fadeTime / keyFrame,
+                    maxOpacity = 1,
+                    stepOpacity = maxOpacity / keyFrame,
+                    opacityValue = 0,
+                    sId = '';
+
+                if (!element) return;
+
+                if (element.getAttribute('data-fade-stock-display') !== undefined &&
+                    element.getAttribute('data-fade-stock-display') !== null) {
+                    element.style.display = element.getAttribute('data-fade-stock-display');
+                }
+
+                var setOpacity = function (setNumber) {
+                    if ('opacity' in element.style) {
+                        element.style.opacity = setNumber;
+                    } else {
+                        element.style.filter = 'alpha(opacity=' + (setNumber * 100) + ')';
+
+                        if (navigator.userAgent.toLowerCase().match(/msie/) &&
+                            !window.opera && !element.currentStyle.hasLayout) {
+                            element.style.zoom = 1;
+                        }
+                    }
+                };
+
+                if (!callback || typeof callback !== 'function') callback = function () { };
+
+                setOpacity(0);
+
+                sId = setInterval(function () {
+                    opacityValue = Number((opacityValue + stepOpacity).toFixed(12));
+
+                    if (opacityValue > maxOpacity) {
+                        opacityValue = maxOpacity;
+                        clearInterval(sId);
+                    }
+
+                    setOpacity(opacityValue);
+
+                    if (opacityValue === maxOpacity) callback();
+                }, stepTime);
+
+                return element;
+            };
+        </script>
+
+        <section class="sns-area">
+            <div class="sns-btn">
+                <ul class="snsbtniti">
+                    <li><a href="TwitterのプロフィールURL" class="flowbtn10"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="インスタのプロフィールURL" class="flowbtn10"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="FacebookページのURL" class="flowbtn10"><i class="fab fa-facebook-f"></i></a>
+                    <li><a href="https://line.me/ti/p/%ライン＠のアカウント" class="flowbtn10"><i class="fab fa-line"></i></a>
+                </ul>
+            </div>
+        </section>
 
         <section class="section about" id="about">
             <h2 class="heading">
                 <img src="img/ttl_about.svg" alt="about">
             </h2>
-            <p>おいしいコーヒーをお供に、あなただけのタイムレスなひと時をお過ごしください</p>
+            <p>築50年の古民家をリノベーションし、2020年4月にオープンしました<br>美味しい日本茶と和菓子で、特別なひと時をお過ごしください</p>
         </section>
 
         <section class="section menu" id="menu">
@@ -52,12 +147,12 @@
                 <img src="img/ttl_menu.svg" alt="menu">
             </h2>
             <ul class="menu-list">
-                <li>ブレンドコーヒー　500yen</li>
-                <li>エスプレッソ　400yen</li>
-                <li>カフェラテ　600yen</li>
-                <li>カフェモカ　600yen</li>
-                <li>ランチセット　1000yen</li>
-                <li>日替わりケーキセット　800yen</li>
+                <li>抹茶・・・・・・・・・500 yen</li>
+                <li>ほうじ茶・・・・・・・400 yen</li>
+                <li>抹茶ラテ・・・・・・・600 yen</li>
+                <li>ほうじ茶ラテ・・・・・600 yen</li>
+                <li>ランチセット・・・・・1000 yen</li>
+                <li>ティーセット・・・・・800 yen</li>
             </ul>
         </section>
 
@@ -69,19 +164,19 @@
                 <li>
                     <figure>
                         <img src="img/photos_01.jpg" alt="フォト1">
-                        <figcaption>100種類以上のコーヒー豆を取り揃え、日替わりでおすすめのフレーバーをお楽しみいただけます</figcaption>
+                        <figcaption>ランチタイム限定のティーセットは当店の一押し</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure>
                         <img src="img/photos_02.jpg" alt="フォト2">
-                        <figcaption>焼きたてのパンやケーキセットなど、フードメニューも豊富にご用意しています</figcaption>
+                        <figcaption>和菓子各種はテイクアウトも承っております</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure>
                         <img src="img/photos_03.jpg" alt="フォト3">
-                        <figcaption>ゆっくりとした時間が流れる落ち着いた雰囲気の店内</figcaption>
+                        <figcaption>日本庭園を眺めながらゆっくりお過ごしください</figcaption>
                     </figure>
                 </li>
             </ul>
@@ -119,6 +214,14 @@
                     <li><a href="#access">access</a></li>
                 </ul>
             </nav>
+            <div class="sns-btn">
+                <ul class="snsbtniti">
+                    <li><a href="TwitterのプロフィールURL" class="flowbtn10"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="インスタのプロフィールURL" class="flowbtn10"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="FacebookページのURL" class="flowbtn10"><i class="fab fa-facebook-f"></i></a>
+                    <li><a href="https://line.me/ti/p/%ライン＠のアカウント" class="flowbtn10"><i class="fab fa-line"></i></a>
+                </ul>
+            </div>
             <p><small>&copy;Copyright 2020 KURONEKO Corporation.</small></p>
         </div>
     </footer>

@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 /* 初期スタイル */
 * {
     -webkit-box-sizing: border-box;
@@ -19,13 +18,16 @@ h1, h2 {
     margin-bottom: 10px;
     line-height: 1.5;
 }
+
 h1 img {
     max-width: 100%;
 }
+
 a {
     color: #806342;
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
@@ -53,6 +55,7 @@ img {
 address {
     font-style: normal;
 }
+
 /* 初期スタイルここまで */
 
 .header {
@@ -67,10 +70,10 @@ address {
     padding-bottom: 5px;
 }
 
+/* ナビメニュー */
 .nav-toggle {
     display: none;
 }
-
 .btn-burger {
     position: absolute;
     top: 5px;
@@ -82,7 +85,7 @@ address {
     background: url("../img/burger.svg") center center / 35px 20px no-repeat;
     cursor: pointer;
 }
-.nav-toggle:checked ~ .btn-burger {
+.nav-toggle:checked~.btn-burger {
     background: url("../img/close.svg") center center / 26px 26px no-repeat;
 }
 .nav {
@@ -102,12 +105,12 @@ address {
     display: block;
     color: #fff;
 }
-.nav-toggle:checked ~ .nav .nav-list {
+.nav-toggle:checked~.nav .nav-list {
     display: block;
 }
 
 .section {
-    max-width: 1000px;
+    /* max-width: 1000px; */
     margin: 0 auto;
     margin-bottom: 50px;
     padding: 0 10px;
@@ -118,16 +121,82 @@ address {
     margin: 0 auto 5px;
 }
 
+/* swiper */
+.container {
+    text-align: center;
+    margin-bottom: 0;
+}
+.swiper-slide img {
+    height: 300px;
+}
+
+/* SNSボタン */
+.sns-area {
+    background-color: rgb(90, 134, 69);
+    margin-top: 0;
+}
+.sns-btn{
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.flowbtn10 {
+    display: inline-block;
+    font-size: 35px;
+    text-decoration: none;
+    transition: .5s;
+    color: #fff;
+}
+/* インスタ・pocket・ラインだけ少し大きく */
+.flowbtn10 .fa-instagram, .flowbtn10 .fa-get-pocket, .flowbtn10 .fa-get-pocket, .flowbtn10 .fa-line {
+    font-size: 38px;
+}
+/* Twitterマウスホバー時 */
+.flowbtn10 .fa-twitter:hover {
+    color: #55acee;
+}
+/* Instagramマウスホバー時 */
+.flowbtn10 .fa-instagram:hover {
+    color: #c6529a;
+}
+/* Facebookマウスホバー時 */
+.flowbtn10 .fa-facebook-f:hover {
+    color: #3b5998;
+}
+/* LINEマウスホバー時 */
+.flowbtn10 .fa-line:hover {
+    color: #00c300;
+}
+/* ulタグの内側余白を０にする */
+ul.snsbtniti {
+    padding: 0!important;
+}
+/* アイコン全体の位置 */
+.snsbtniti {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+/* アイコン同士の余白 */
+.snsbtniti li {
+    flex: 0 0 25%;
+    text-align: center!important;
+}
+
+/* aboutセクション */
 .about {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 50px;
 }
 
+/* menuセクション */
 .menu {
     text-align: center;
     margin-bottom: 50px;
-} 
+    background-image: url(../img/menu-bg.jpg);
+}
 .menu-list {
     display: inline-block;
     margin-left: 30px;
@@ -141,6 +210,7 @@ address {
     margin-bottom: 0px;
 }
 
+/* photosセクション */
 .photos-list li {
     margin-bottom: 30px;
 }
@@ -149,6 +219,7 @@ address {
     text-align: left;
 }
 
+/* accessセクション */
 .access {
     text-align: center;
 }
@@ -201,7 +272,6 @@ address {
     color: #fff;
     text-transform: uppercase;
 }
-
 .copyright {
     margin: 0;
     padding-left: 15px;
@@ -211,6 +281,7 @@ address {
     font-size: 11px;
 }
 
+/* PC表示の設定 */
 @media screen and (min-width:768px) {
     h1, h2 {
         margin-top: 0;
@@ -221,36 +292,28 @@ address {
     h1 img {
         width: 960px;
     }
-    
-    
     a:hover {
         text-decoration: underline;
     }
-    
     p {
         margin-top: 0;
         margin-bottom: 1em;
     }
-    
     ul {
         margin: 1em 0;
         padding: 0;
         list-style: none;
     }
-    
     figure {
         margin: 0;
     }
-    
     img {
         max-width: 100%;
         height: auto;
     }
-    
     .header {
         padding: 5px 0 0;
     }
-    
     .btn-burger {
         display: none;
     }
@@ -261,15 +324,12 @@ address {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        
         padding: 0;
     }
     .nav-list li {
@@ -283,20 +343,20 @@ address {
     .nav-list li:first-child {
         border-left: 1px solid #fff;
     }
-    .nav-toggle:checked ~ .nav .nav-list {
+    .nav-toggle:checked~.nav .nav-list {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
     }
-    
     .section {
         margin-bottom: 70px;
     }
-    
     .heading {
         margin-bottom: 10px;
     }
-
+    .swiper-slide img {
+        height: 500px;
+    }
     .menu-list {
         display: inline-block;
         margin-top: 0;
@@ -307,7 +367,6 @@ address {
     .menu-list li {
         margin-bottom: 10px;
     }
-
     .photos {
         margin-top: 0;
         width: 750px;
@@ -319,7 +378,6 @@ address {
         font-size: 16px;
         text-align: left;
     }
-    
     .access {
         width: 600px;
     }
@@ -327,15 +385,12 @@ address {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-    
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
-    
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-    
         margin: 0 auto;
     }
     .access-address {
@@ -349,7 +404,6 @@ address {
     .access-map {
         max-width: 600px;
     }
-    
     /* フッター */
     .footer {
         padding: 50px 0 20px;
