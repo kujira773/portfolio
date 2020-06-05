@@ -1,7 +1,7 @@
 # はじめに  
 ご覧いただきありがとうございます。  
 htmlのコーディングやwebデザインを独学で学び、現在の自分のスキルを使ってポートフォリオを作成しました。ここではポートフォリオを作成した過程や各ポートフォリオの説明について下記の目次に沿って記載します。  
-[ポートフォリオを見る](https://kujira773.github.io/portfolio/)  
+##[ポートフォリオを見る](https://kujira773.github.io/portfolio/)  
 
 ## ◆目次
 1. [ポートフォリオをどのように制作したのか](#ポートフォリオをどのように制作したのか)
@@ -54,7 +54,7 @@ photoshop, illustractorの基本的なツールの操作を学び、画像の編
 短期開発の中で改善を繰り返すアジャイルのメリットは今回のポートフォリオ作成にも当てはまると考え、動画で紹介されているカンバンの使い方などを参考にした  
 
 ## 女性限定のシェアハウスのwebサイト 
-[ポートフォリオを見る](https://kujira773.github.io/portfolio/portfolio1/index.html)
+[女性限定のシェアハウスのwebサイトを見る](https://kujira773.github.io/portfolio/portfolio1/index.html)
 
 ### i. ポートフォリオの概要
 背景：入居者を増やすため、サイトをリニューアルすることになった  
@@ -111,7 +111,7 @@ photoshop, illustractorの基本的なツールの操作を学び、画像の編
 * 口コミ・サービス(企業が知ってもらいたい情報)〜プラン・金額(ユーザーが1番知りたい情報)の順番にセクションを配置することで、ページを最後まで見てもらう
 
 ## 古民家風カフェのwebサイト  
-[ポートフォリオを見る](https://kujira773.github.io/portfolio/portfolio2/index.html)
+[古民家風カフェのwebサイトを見る](https://kujira773.github.io/portfolio/portfolio2/index.html)
 
 ### i. ポートフォリオの概要
 背景：店舗開店に合わせてサイトを立ち上げることになった  
